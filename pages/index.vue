@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <Welcome/>
-    <nuxt-link to="/home">Home page</nuxt-link>
+   <Welcome/>
   </div>
 </template>
 

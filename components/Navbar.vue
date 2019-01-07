@@ -6,10 +6,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Меню <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        <a class="nav-item nav-link" href="/home">Menu</a>
+        <a class="nav-item nav-link" href="#">Settings</a>
+        <a class="nav-item nav-link" href="#">Info</a>
         </div>
     </div>
     </nav>

@@ -19,13 +19,14 @@ export default {
 
 
 <style scoped>
+
 .app {
   height: 100vh;
   width: 100vw;
   background-color: #282c34;
 }
 .main {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   padding: 30px;
 }
