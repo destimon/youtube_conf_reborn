@@ -1,6 +1,9 @@
 <template>
-  <div>
-  <nuxt/>
+  <div class="app">
+    <Navbar/>
+    <div class="main">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
@@ -8,24 +11,22 @@
 import Navbar from '~/components/Navbar'
 
 export default {
-  Navbar
+  components: {
+    Navbar
+  }
 }
-
-// Checking
 </script>
 
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<style scoped>
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: #282c34;
 }
-
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 30px;
+}
 </style>

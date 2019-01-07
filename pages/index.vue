@@ -1,19 +1,16 @@
 <template>
   <div class="container">
-    <Navbar/>
     <Welcome/>
+    <nuxt-link to="/home">Home page</nuxt-link>
   </div>
 </template>
 
 <script>
-
 import Welcome from '~/components/Welcome.vue'
-import Navbar from '~/components/Navbar'
 
 export default {
   components: {
-    Welcome,
-    Navbar
+    Welcome
   }
 }
 </script>
