@@ -12,19 +12,6 @@ const db = require('./config/db');
 const session 		= require('express-session');
 const mongoose		= require('mongoose');
 
-io.on('connection', (socket) => {
-  console.log('new socket');
-  socket.on('asd', (data) => {
-    console.log(data);
-    socket.emit('temp', {mes: 'temp from server'});
-  });
-  socket.on('click', (data) => {
-    console.log(data);
-    socket.emit('click_answer', {mes: 'thx for click'});
-  })
-})
-
-
 // Configure ---
 app.set('port', port)
 mongoose.connect(db.url);
@@ -40,6 +27,8 @@ app.use(passport.session()); // persistent login sessions
 
 // Routes ---
 require('./routes/auth')(app, passport);
+require('./routes/api')(app);
+require('./routes/sockets')(io);
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
