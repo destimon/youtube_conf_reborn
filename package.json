@@ -23,7 +23,7 @@
     "heroku": "^7.21.0",
     "lodash": "^4.17.11",
     "mongodb": "^3.1.10",
-    "mongoose": "^5.4.4",
+    "mongoose": "^5.7.5",
     "nuxt": "^2.0.0",
     "passport": "^0.4.0",
     "passport-google-oauth": "^1.0.0",
