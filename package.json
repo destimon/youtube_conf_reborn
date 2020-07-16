@@ -21,7 +21,7 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "heroku": "^7.21.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.4",
     "nuxt": "^2.0.0",
